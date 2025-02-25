@@ -1,7 +1,7 @@
 # Business ERP Solution
-=========================
+#=========================
 How to ERP project deploy
-=========================
+#=========================
 1. dnf install httpd
 2. dnf install php*
 3. dnf install mysql*
