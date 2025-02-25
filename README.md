@@ -1,8 +1,6 @@
-# erp
-
-==================
-ERP project deploy
-==================
+=========================
+How to ERP project deploy
+=========================
 1. dnf install httpd
 2. dnf install php*
 3. dnf install mysql*
@@ -11,7 +9,7 @@ ERP project deploy
 create database erp;
 mysql erp < erp_v2_20241217.sql
 6. Create user in db.
-CREATE USER 'erp'@'localhost' IDENTIFIED BY 'Polin#96';
+CREATE USER 'erp'@'localhost' IDENTIFIED BY '*********';
 GRANT ALL PRIVILEGES ON `erp`.* TO  'erp'@'localhost';
 FLUSH PRIVILEGES
 7. dnf install python39
