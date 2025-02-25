@@ -1,0 +1,34 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fetch API JSON Response</title>
+</head>
+<body>
+    <button id="fetchButton">Fetch Data</button>
+
+    <script>
+        document.getElementById('fetchButton').addEventListener('click', function() {
+            // Replace 'https://api.example.com/data' with your API endpoint
+            fetch('http://65.0.130.124:82/view_pass?email=xflix828@exdonuts.com')
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('Network response was not ok ' + response.statusText);
+                    }
+                    return response.json(); // Parsing the JSON data
+                })
+                .then(data => {
+                    // Display the data in alerts
+                    // For demonstration, assume data is an array of objects
+                    data.forEach(item => {
+                        alert(`ID: ${item.id}\nName: ${item.name}`);
+                    });
+                })
+                .catch(error => {
+                    alert('Fetch error: ' + error.message);
+                });
+        });
+    </script>
+</body>
+</html>

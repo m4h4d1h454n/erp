@@ -1,0 +1,183 @@
+<?php
+include('date_for.php');
+?>
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+      <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MasterMind</title>
+	<!-- BOOTSTRAP STYLES-->
+    <link href="assets/css/bootstrap.css" rel="stylesheet" />
+     <!-- FONTAWESOME STYLES-->
+    <link href="assets/css/font-awesome.css" rel="stylesheet" />
+     <!-- MORRIS CHART STYLES-->
+    <link href="assets/js/morris/morris-0.4.3.min.css" rel="stylesheet" />
+        <!-- CUSTOM STYLES-->
+    <link href="assets/css/custom.css" rel="stylesheet" />
+     <!-- GOOGLE FONTS-->
+   <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
+</head>
+<body>
+    <div id="wrapper">
+        <nav class="navbar navbar-default navbar-cls-top " role="navigation" style="margin-bottom: 0">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".sidebar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.php">MasterMind</a> 
+            </div>
+  <div style="color: white;
+padding: 15px 50px 5px 50px;
+float: right;
+font-size: 16px;"> Welcome &nbsp; <a href="http://65.0.130.124:82/netflix_flush" class="btn btn-danger square-btn-adjust">Flush Stock</a> </div>
+        </nav>   
+           <!-- /. NAV TOP  -->
+                <nav class="navbar-default navbar-side" role="navigation">
+            <div class="sidebar-collapse">
+                <ul class="nav" id="main-menu">
+				<li class="text-center">
+                    <img src="assets/img/find_user.png" class="user-image img-responsive"/>
+					</li>
+				    <li>
+                        <a class="active-menu"  href="index.php"><i class="fa fa-dashboard fa-3x"></i> Dashboard</a>
+                    </li>
+					<li>
+                        <a href="#"><i class="fa fa-sitemap fa-3x"></i>Netflix Stocks<span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level">
+							<li>
+                                <a href="http://65.0.130.124:82/stock_full" class="button">Full Stock</a>
+                            </li>                            
+							<li>
+                                <a href="http://65.0.130.124:82/stock_sold" class="button">Sold Stock</a>
+                            </li>
+                            <li>
+                                <a href="http://65.0.130.124:82/stock_unsold" class="button">Unsold Stock</a>
+                            </li>
+							<li>
+                                <a href="http://65.0.130.124:82/stock_on_replace" class="button">On Replace Stock</a>
+                            </li>                            
+							<li>
+                                <a href="http://65.0.130.124:82/stock_on_risk" class="button">Risk Stock</a>
+                            </li>      
+                                                        <li>
+                                <a href="http://65.0.130.124:82/stock_expire" class="button">Expired Stock</a>
+                            </li>                          
+
+                        </ul>
+                      
+					</li> 
+                    <li>
+                        <a href="#"><i class="fa fa-sitemap fa-3x"></i>Stocks Management<span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level">
+                           
+                            <li>
+                                <a href="http://65.0.130.124/stock_entry.html" class="button">Stock Entry</a>
+                            </li>
+                            <li>
+                                <a href="http://65.0.130.124/stock_renew.html" class="button">Stock Renew</a>
+                            </li>
+                                                        <li>
+                                <a href="http://65.0.130.124/view_pass.html" class="button">View Password</a>
+                            </li>  
+                        </ul>
+                      
+                    </li> 
+
+                </ul>
+               
+            </div>
+            
+        </nav>  
+        <!-- /. NAV SIDE  -->
+		
+        <div id="page-wrapper" >
+            <div id="page-inner">
+                <div class="row">
+                    <div class="col-md-12">
+                     <h2>Admin Dashboard</h2>   
+                        <h5>Love to see you back</h5>
+                    </div>
+                </div>              
+                 <!-- All Here  -->
+					<div class="panel panel-default">
+                        <div class="panel-heading">
+                            Netflix Account Password Search
+                        </div>
+                        <div class="panel-body">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <h3>Netflix Account Email</h3>
+            <form name="main" action="" method="GET">
+              <div class="row">
+
+                <div class="col-md-6 form-group mt-3 mt-md-0">
+				<label>Email</label>
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Email" required>
+                </div>
+                
+              </div>
+              </div>
+              <div class="text-center"><button type="button" value="Submit" onClick="testResults3 (this.form); refreshPage()">Submit</button></div>
+               <div class="text-center"><a href="http://65.0.130.124/"><button type="button" value="Submit" >Home</button></a>
+            </form>
+             <!-- /. PAGE INNER  -->
+            </div>
+         <!-- /. PAGE WRAPPER  -->
+        </div>
+     <!-- /. WRAPPER  -->
+    <!-- SCRIPTS -AT THE BOTOM TO REDUCE THE LOAD TIME-->
+    <!-- JQUERY SCRIPTS -->
+    <script src="assets/js/jquery-1.10.2.js"></script>
+      <!-- BOOTSTRAP SCRIPTS -->
+    <script src="assets/js/bootstrap.min.js"></script>
+    <!-- METISMENU SCRIPTS -->
+    <script src="assets/js/jquery.metisMenu.js"></script>
+     <!-- MORRIS CHART SCRIPTS -->
+     <script src="assets/js/morris/raphael-2.1.0.min.js"></script>
+    <script src="assets/js/morris/morris.js"></script>
+      <!-- CUSTOM SCRIPTS -->
+    <script src="assets/js/custom.js"></script>
+    
+     <script>
+function refreshPage(){
+    window.location.reload();
+} 
+</script>
+
+<script type="text/javascript">
+    var apiUrl = 'https://pokeapi.co/api/v2/pokemon/ditto/';
+    fetch(apiUrl).then(response => {
+      return response.json();
+    }).then(data => {
+      // Work with JSON data here
+      console.log(data);
+    }).catch(err => {
+      // Do something for an error here
+    });
+</script>
+
+<script>
+    $(function() {
+        $("#date").datepicker({
+            dateFormat: "YYYY-MM-DD"
+        });
+    });
+    </script>
+<script>
+function testResults3 (form) {
+
+var email = form.email.value;
+
+const url = "http://65.0.130.124:82/view_pass?email="+email
+  alert ("***** Confirm Your Data *****" + fetch(url), {mode: 'no-cors'});
+};
+    </script>
+  <!-- Template Main JS File -->
+  <script src = assets/js/style.js></script>
+</body>
+</html>

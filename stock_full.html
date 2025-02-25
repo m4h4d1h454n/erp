@@ -1,0 +1,222 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+      <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MasterMind</title>
+	<!-- BOOTSTRAP STYLES-->
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.css') }}"> 
+     <!-- FONTAWESOME STYLES-->
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/font-awesome.css') }}"> 
+     <!-- MORRIS CHART STYLES-->
+   
+        <!-- CUSTOM STYLES-->
+    
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/custom.css') }}"> 
+     <!-- GOOGLE FONTS-->
+   <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
+     <!-- TABLE STYLES-->
+	<link rel="stylesheet" href="{{ url_for('static', filename='js/dataTables/dataTables.bootstrap.css') }}"> 
+</head>
+<body>
+    <div id="wrapper">
+        <nav class="navbar navbar-default navbar-cls-top " role="navigation" style="margin-bottom: 0">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".sidebar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="http://65.0.130.124:80/dash.php">MasterMind</a> 
+            </div>
+  <div style="color: white;
+padding: 15px 50px 5px 50px;
+float: right;
+font-size: 16px;"> Welcome &nbsp; <a href="http://65.0.130.124:82/netflix_flush" class="btn btn-danger square-btn-adjust">Flush Stock</a> <a href="http://65.0.130.124/" class="btn btn-danger square-btn-adjust">Logout</a> </div>
+        </nav>   
+           <!-- /. NAV TOP  -->
+                <nav class="navbar-default navbar-side" role="navigation">
+            <div class="sidebar-collapse">
+                <ul class="nav" id="main-menu">
+				<li class="text-center">
+                    <img src="assets/img/find_user.png" class="user-image img-responsive"/>
+					</li>
+				    <li>
+                        <a class="active-menu"  href="http://65.0.130.124:80/dash.php"><i class="fa fa-dashboard fa-3x"></i> Dashboard</a>
+                    </li>
+					<li>
+                        <a href="#"><i class="fa fa-sitemap fa-3x"></i>Netflix Stocks<span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level">
+							<li>
+                                <a href="http://65.0.130.124:82/stock_full" class="button">Full Stock</a>
+                            </li>                            
+							<li>
+                                <a href="http://65.0.130.124:82/stock_sold" class="button">Sold Stock</a>
+                            </li>
+                            <li>
+                                <a href="http://65.0.130.124:82/stock_unsold" class="button">Unsold Stock</a>
+                            </li>
+							<li>
+                                <a href="http://65.0.130.124:82/stock_on_replace" class="button">On Replace Stock</a>
+                            </li>                            
+							<li>
+                                <a href="http://65.0.130.124:82/stock_on_risk" class="button">Risk Stock</a>
+                            </li>                            
+                            <li>
+                                <a href="http://65.0.130.124:82/stock_expire" class="button">Expired Stock</a>
+                            </li>    
+                        </ul>
+                      
+					</li> 
+                    <li>
+                        <a href="#"><i class="fa fa-sitemap fa-3x"></i>Management<span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level">
+                           
+                            <li>
+                                <a href="http://65.0.130.124/stock_entry.php" class="button">Stock Entry</a>
+                            </li>
+                            <li>
+                                <a href="http://65.0.130.124/stock_renew.php" class="button">Stock Renew</a>
+                            </li>
+							<li>
+                                <a href="http://65.0.130.124/user_renew.php" class="button">User Renew</a>
+                            </li>
+							<li>
+                                <a href="http://65.0.130.124/stock_replace.php" class="button">Stock Replace</a>
+                            </li>
+                                                        <li>
+                                <a href="http://65.0.130.124:82/view_password" class="button">View Password</a>
+                            </li>  
+							                            <li>
+                                <a href="http://65.0.130.124:82/update_password" class="button">Update Password</a>
+                            </li> 
+                        </ul>
+                      
+                    </li> 
+                    <li>
+                        <a href="#"><i class="fa fa-sitemap fa-3x"></i>Netflix Users<span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level">
+						                                                        <li>
+                                <a href="http://65.0.130.124/user_entry.php" class="button">User Entry</a>
+                            </li>
+                            <li>
+                                <a href="http://65.0.130.124:82/s_user_active" class="button">Active Users</a>
+                            </li>                            
+                                                           <li>
+                                <a href="http://65.0.130.124:82/s_user_no_stock" class="button">No Account Users</a>
+                            </li>    
+							                               <li>
+                                <a href="http://65.0.130.124/assign_account.php" class="button">Assign Private Account</a>
+                            </li>   
+							<li>
+                                <a href="http://65.0.130.124/assign_shared_account.php" class="button">Assign Shared Account</a>
+                            </li>  
+<li>
+                                <a href="http://65.0.130.124/unassigned_account.php" class="button">Unassign Account</a>
+                            </li>   	
+                        </ul>
+                      
+                    </li> 
+
+                </ul>
+               
+            </div>
+            
+        </nav>  
+        <!-- /. NAV SIDE  -->
+        <div id="page-wrapper" >
+            <div id="page-inner">
+                <div class="row">
+                    <div class="col-md-12">
+                     <h2>Netflix Full Stock</h2>   
+                        <h5>Love to see you back. </h5>
+                       
+                    </div>
+                </div>
+                 <!-- /. ROW  -->
+                 <hr />
+               
+            <div class="row">
+                <div class="col-md-12">
+                    <!-- Advanced Tables -->
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                             Full Stock
+                        </div>
+                        <div class="panel-body">
+                            <div class="table-responsive">
+                                <table class="table table-striped table-bordered table-hover" id="dataTables-example">
+
+        <thead>
+            <tr>
+            <th>id</th>
+            <th>user_email</th>
+            <th>is_sold</th>
+            <th>seller</th>
+            <th>start_date</th>
+            <th>end_date</th>
+            <th>day_left</th>
+            <th>price</th>
+            <th>renew_count</th>
+            <th>is_rplacement</th>
+            <th>active</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for row in data %}
+            <tr>
+            <td>{{ row[0] }}</td>
+            <td>{{ row[1] }}</td>
+            <td>{{ row[2] }}</td>
+            <td>{{ row[3] }}</td>
+            <td>{{ row[4] }}</td>
+            <td>{{ row[5] }}</td>
+            <td>{{ row[6] }}</td>
+            <td>{{ row[7] }}</td>
+			<td>{{ row[8] }}</td>
+            <td>{{ row[9] }}</td>
+        <td>{{ row[10] }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <!--End Advanced Tables -->
+                </div>
+            </div>
+ 
+                <!-- /. ROW  -->
+        </div>
+               
+    </div>
+             <!-- /. PAGE INNER  -->
+            </div>
+         <!-- /. PAGE WRAPPER  -->
+     <!-- /. WRAPPER  -->
+    <!-- SCRIPTS -AT THE BOTOM TO REDUCE THE LOAD TIME-->
+    <!-- JQUERY SCRIPTS -->
+	<script src="{{url_for('static', filename='js/jquery-1.10.2.js')}}"></script>
+      <!-- BOOTSTRAP SCRIPTS -->
+	<script src="{{url_for('static', filename='js/bootstrap.min.js')}}"></script>
+    <!-- METISMENU SCRIPTS -->
+	<script src="{{url_for('static', filename='js/jquery.metisMenu.js')}}"></script>
+     <!-- DATA TABLE SCRIPTS -->
+	<script src="{{url_for('static', filename='js/dataTables/jquery.dataTables.js')}}"></script>
+	
+	<script src="{{url_for('static', filename='js/dataTables/dataTables.bootstrap.js')}}"></script>
+        <script>
+            $(document).ready(function () {
+                $('#dataTables-example').dataTable();
+            });
+    </script>
+         <!-- CUSTOM SCRIPTS -->
+	<script src="{{url_for('static', filename='js/custom.js')}}"></script>
+    
+  
+
+</body>
+</html>
