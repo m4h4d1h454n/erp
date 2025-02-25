@@ -19,9 +19,9 @@ def db_conn():
 
 
 def send_message(text):
-    url = f"https://api.telegram.org/bot6144791187:AAHRTw6JoOEAel8G14vPCvMRsbhnhSxPsqw/sendMessage"
+    url = f"https://api.telegram.org/<api_token>/sendMessage"
     payload = {
-        'chat_id': '-1002040256441',
+        'chat_id': '<chat_id>',
         'text': text,
         'parse_mode': 'MarkdownV2'  # Use MarkdownV2 for special characters
     }
@@ -38,7 +38,7 @@ message = "Hello, *World* \\! This message includes \\*special\\* characters."
 # Send the message
 
 
-#https://api.telegram.org/bot6144791187:AAHRTw6JoOEAel8G14vPCvMRsbhnhSxPsqw/sendMessage?chat_id=-1002040256441&text={msg}
+#https://api.telegram.org/<api_token>/sendMessage?chat_id=<chat_id>&text={msg}
 
 
 
@@ -75,7 +75,7 @@ def index2():
     mycursor.close()
     mydb.close()
     x="success"
-    #url = f"https://api.telegram.org/bot6144791187:AAHRTw6JoOEAel8G14vPCvMRsbhnhSxPsqw/sendMessage?chat_id=-703960512&text={data}"
+    #url = f"https://api.telegram.org/<api_token>/sendMessage?chat_id=-703960512&text={data}"
     #reder_url = f"http://m4h4d1.tech/contact.html"
     #reder = requests.get(reder_url)
     #print(requests.get(url).json()) # this sends the start_date
@@ -291,7 +291,7 @@ def assign_account():
     escaped_text = escape_special_characters(msg)
     
     print(escaped_text, type(escaped_text))
-    #url = f"https://api.telegram.org/bot6144791187:AAHRTw6JoOEAel8G14vPCvMRsbhnhSxPsqw/sendMessage?chat_id=-1002040256441&text={msg}"
+    #url = f"https://api.telegram.org/<api_token>/sendMessage?chat_id=<chat_id>&text={msg}"
     print(send_message(escaped_text))
 
     #print(requests.get(url).json()) 
