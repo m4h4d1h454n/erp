@@ -1,0 +1,134 @@
+nohup: ignoring input
+ * Serving Flask app 'erp_api'
+ * Debug mode: on
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:82
+ * Running on http://10.10.29.4:82
+[33mPress CTRL+C to quit[0m
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 107-214-435
+10.10.29.5 - - [05/Dec/2024 01:34:43] "GET /demo HTTP/1.1" 200 -
+10.10.29.5 - - [05/Dec/2024 01:34:43] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+127.0.0.1 - - [05/Dec/2024 01:35:13] "GET /stock_full HTTP/1.1" 200 -
+10.10.29.5 - - [05/Dec/2024 01:36:20] "GET /demo HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2024 01:36:32] "GET /stock_sold HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2024 01:55:00] "GET /stock_sold HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2024 01:55:17] "GET /stock_expire HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2024 01:55:27] "GET /stock_full HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2024 02:08:07] "GET /stock_sold HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2024 02:09:40] "GET /stock_sold HTTP/1.1" 200 -
+10.10.29.5 - - [05/Dec/2024 12:19:36] "GET /demo HTTP/1.1" 200 -
+10.10.29.5 - - [05/Dec/2024 12:19:36] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+127.0.0.1 - - [05/Dec/2024 12:19:51] "GET /stock_full HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2024 14:34:01] "GET /stock_full HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2024 14:34:09] "GET /stock_expire HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2024 18:46:13] "GET /stock_full HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2024 19:55:18] "GET /stock_full HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2024 20:09:58] "GET /stock_full HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2024 20:10:08] "GET /stock_on_risk HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2024 21:17:22] "GET /stock_full HTTP/1.1" 200 -
+127.0.0.1 - - [06/Dec/2024 00:12:59] "GET /stock_full HTTP/1.1" 200 -
+127.0.0.1 - - [06/Dec/2024 00:13:02] "GET /stock_sold HTTP/1.1" 200 -
+ * Detected change in '/var/www/html/api/erp_api.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 107-214-435
+10.10.29.2 - - [06/Dec/2024 00:21:18] "GET /Employee_Activity HTTP/1.1" 200 -
+10.10.29.2 - - [06/Dec/2024 00:21:19] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+ * Detected change in '/var/www/html/api/erp_api.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 107-214-435
+10.10.29.2 - - [06/Dec/2024 00:22:47] "GET /Employee_Activity HTTP/1.1" 200 -
+10.10.29.2 - - [06/Dec/2024 00:22:47] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+ * Detected change in '/var/www/html/api/erp_api.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 107-214-435
+10.10.29.2 - - [06/Dec/2024 00:26:58] "GET /Employee_Activity HTTP/1.1" 200 -
+10.10.29.2 - - [06/Dec/2024 00:26:58] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+127.0.0.1 - - [06/Dec/2024 00:27:10] "GET /Employee_Activity HTTP/1.1" 200 -
+127.0.0.1 - - [06/Dec/2024 00:27:26] "GET /Employee_Activity HTTP/1.1" 200 -
+127.0.0.1 - - [06/Dec/2024 00:27:39] "GET /Employee_Activity HTTP/1.1" 200 -
+127.0.0.1 - - [06/Dec/2024 00:28:02] "GET /Employee_Activity HTTP/1.1" 200 -
+10.10.29.2 - - [06/Dec/2024 00:28:22] "GET /Employee_Activity HTTP/1.1" 200 -
+10.10.29.2 - - [06/Dec/2024 00:28:22] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+127.0.0.1 - - [06/Dec/2024 00:28:39] "GET /Employee_Activity HTTP/1.1" 200 -
+127.0.0.1 - - [06/Dec/2024 00:29:34] "GET /Employee_Activity HTTP/1.1" 200 -
+127.0.0.1 - - [06/Dec/2024 00:29:49] "GET /Employee_Activity HTTP/1.1" 200 -
+127.0.0.1 - - [06/Dec/2024 00:29:54] "GET /Employee_Activity HTTP/1.1" 200 -
+127.0.0.1 - - [06/Dec/2024 00:31:25] "GET /Employee_Activity HTTP/1.1" 200 -
+127.0.0.1 - - [06/Dec/2024 00:34:36] "GET /Employee_Activity HTTP/1.1" 200 -
+127.0.0.1 - - [06/Dec/2024 00:36:04] "GET /Employee_Activity HTTP/1.1" 200 -
+ * Detected change in '/var/www/html/api/erp_api.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 107-214-435
+10.10.29.2 - - [06/Dec/2024 00:36:44] "[35m[1mGET /Employee_Activity HTTP/1.1[0m" 500 -
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/flask/app.py", line 1536, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/usr/local/lib/python3.9/site-packages/flask/app.py", line 1514, in wsgi_app
+    response = self.handle_exception(e)
+  File "/usr/local/lib/python3.9/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.9/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.9/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.9/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/var/www/html/api/erp_api.py", line 203, in Employee_Activity
+    cursor.execute("SELECT `user`,`log_details`,`created_at`,status FROM `access_logs`  ORDER BY id DESC")
+  File "/usr/local/lib/python3.9/site-packages/mysql/connector/cursor.py", line 551, in execute
+    self._handle_result(self._connection.cmd_query(stmt))
+  File "/usr/local/lib/python3.9/site-packages/mysql/connector/connection.py", line 490, in cmd_query
+    result = self._handle_result(self._send_cmd(ServerCmd.QUERY, query))
+  File "/usr/local/lib/python3.9/site-packages/mysql/connector/connection.py", line 395, in _handle_result
+    raise errors.get_exception(packet)
+mysql.connector.errors.ProgrammingError: 1054 (42S22): Unknown column 'status' in 'field list'
+10.10.29.2 - - [06/Dec/2024 00:36:45] "GET /Employee_Activity?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+10.10.29.2 - - [06/Dec/2024 00:36:45] "GET /Employee_Activity?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+10.10.29.2 - - [06/Dec/2024 00:36:45] "GET /Employee_Activity?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+ * Detected change in '/var/www/html/api/erp_api.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 107-214-435
+10.10.29.2 - - [06/Dec/2024 00:37:09] "GET /Employee_Activity HTTP/1.1" 200 -
+10.10.29.2 - - [06/Dec/2024 00:37:09] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+127.0.0.1 - - [06/Dec/2024 00:37:15] "GET /Employee_Activity HTTP/1.1" 200 -
+127.0.0.1 - - [06/Dec/2024 00:37:38] "GET /Employee_Activity HTTP/1.1" 200 -
+127.0.0.1 - - [06/Dec/2024 00:37:47] "GET /Employee_Activity HTTP/1.1" 200 -
+127.0.0.1 - - [06/Dec/2024 00:37:56] "GET /Employee_Activity HTTP/1.1" 200 -
+127.0.0.1 - - [06/Dec/2024 00:38:54] "GET /Employee_Activity HTTP/1.1" 200 -
+127.0.0.1 - - [06/Dec/2024 00:39:05] "GET /Employee_Activity HTTP/1.1" 200 -
+127.0.0.1 - - [06/Dec/2024 00:40:12] "GET /Employee_Activity HTTP/1.1" 200 -
+127.0.0.1 - - [06/Dec/2024 00:40:38] "GET /Employee_Activity HTTP/1.1" 200 -
+127.0.0.1 - - [06/Dec/2024 00:41:01] "GET /Employee_Activity HTTP/1.1" 200 -
+127.0.0.1 - - [06/Dec/2024 00:41:08] "GET /Employee_Activity HTTP/1.1" 200 -
+127.0.0.1 - - [06/Dec/2024 00:41:22] "GET /Employee_Activity HTTP/1.1" 200 -
+127.0.0.1 - - [06/Dec/2024 00:42:17] "GET /Employee_Activity HTTP/1.1" 200 -
+127.0.0.1 - - [06/Dec/2024 00:42:45] "GET /Employee_Activity HTTP/1.1" 200 -
+127.0.0.1 - - [06/Dec/2024 00:43:17] "GET /Employee_Activity HTTP/1.1" 200 -
+127.0.0.1 - - [06/Dec/2024 00:43:30] "GET /Employee_Activity HTTP/1.1" 200 -
+127.0.0.1 - - [06/Dec/2024 00:43:56] "GET /Employee_Activity HTTP/1.1" 200 -
+127.0.0.1 - - [06/Dec/2024 00:44:41] "GET /Employee_Activity HTTP/1.1" 200 -
+127.0.0.1 - - [06/Dec/2024 00:44:50] "GET /Employee_Activity HTTP/1.1" 200 -
+127.0.0.1 - - [06/Dec/2024 00:45:35] "GET /Employee_Activity HTTP/1.1" 200 -
+127.0.0.1 - - [06/Dec/2024 00:45:43] "GET /Employee_Activity HTTP/1.1" 200 -
+127.0.0.1 - - [06/Dec/2024 00:46:21] "GET /Employee_Activity HTTP/1.1" 200 -
+127.0.0.1 - - [06/Dec/2024 00:46:50] "GET /Employee_Activity HTTP/1.1" 200 -
+127.0.0.1 - - [06/Dec/2024 00:52:58] "GET /Employee_Activity HTTP/1.1" 200 -
+127.0.0.1 - - [06/Dec/2024 00:55:53] "GET /Employee_Activity HTTP/1.1" 200 -
+127.0.0.1 - - [06/Dec/2024 00:59:39] "GET /Employee_Activity HTTP/1.1" 200 -
+127.0.0.1 - - [06/Dec/2024 01:03:13] "GET /Employee_Activity HTTP/1.1" 200 -
+127.0.0.1 - - [06/Dec/2024 01:04:14] "GET /Employee_Activity HTTP/1.1" 200 -
+127.0.0.1 - - [06/Dec/2024 01:04:55] "GET /Employee_Activity HTTP/1.1" 200 -
+127.0.0.1 - - [06/Dec/2024 01:05:43] "GET /Employee_Activity HTTP/1.1" 200 -
+127.0.0.1 - - [06/Dec/2024 01:05:56] "GET /Employee_Activity HTTP/1.1" 200 -
+127.0.0.1 - - [06/Dec/2024 01:06:33] "GET /Employee_Activity HTTP/1.1" 200 -
+127.0.0.1 - - [06/Dec/2024 01:06:38] "GET /Employee_Activity HTTP/1.1" 200 -
+127.0.0.1 - - [06/Dec/2024 01:07:01] "GET /Employee_Activity HTTP/1.1" 200 -
+127.0.0.1 - - [06/Dec/2024 01:07:34] "GET /Employee_Activity HTTP/1.1" 200 -
